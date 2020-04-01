@@ -1,12 +1,13 @@
 from flask import Flask, render_template,redirect, url_for
 import random
 app = Flask(__name__)
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 
 #### config ####
 LINK_FILE = "links.txt"
-SHUFFLE = False
-NUM_BLOCKS = 1
+SHUFFLE = True
+NUM_BLOCKS = 5
 ################
 
 
